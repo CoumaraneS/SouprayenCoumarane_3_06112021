@@ -198,3 +198,33 @@ a{
     padding: 6px 12px;
     border-radius: 2px;
 }
+footer{
+    background: #343534;
+    padding: 30px 20px 40px 20px;
+}
+.foot_logo h3{
+    font-family: 'Shrikhand', cursive;
+    font-size: 24px;
+    font-weight: normal;
+    color: white;
+    margin-bottom: 10px;
+}
+.foot_liste li{
+    text-decoration: none;
+    list-style: none;
+    line-height: 30px;
+    background: linear-gradient(to right, rgb(255, 255, 255) 50%, #9356DC 50%, #cc2e5d);
+    background-size: 200%;
+    background-clip: text;
+    color: transparent;
+    transition: 0.4s ease-out;
+}
+.foot_liste li:hover{
+    background-position: -100%;
+}
+.propose::before{
+    content: url(icons/fourch01.png);
+}
+.partenaire::before{
+    content: url(icons/partner01.png);
+}
