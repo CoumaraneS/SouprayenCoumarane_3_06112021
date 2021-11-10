@@ -241,35 +241,39 @@ a{
     border-radius: 2px;
 }
 
-.heart {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    stroke-width: 25;
-    stroke: black;
-    fill: white;
+.fa-heart::before {
+    position: relative;
+    z-index: 10;
+    font-size: 24px;
+    left: 299px;
+    bottom: 60px;
     cursor: pointer;
-  }
-  
-  .heart_fill {
-    width: 22px;
+}
+
+.fa-heart:hover::after {
+    content: "\f004";
     position: absolute;
-    right: 22px;
-    bottom: 32px;
-    fill: url(#grad_fill);
-    stroke: none;
-  }
-  .heart_out {
-    width: 22px;
-    position: absolute;
-    right: 22px;
-    bottom: 32px;
-  }
-  
-  .heart_out:hover {
-    opacity: 0;
-    transition: 0.5s;
-  }
+    z-index: 1;
+    left: 299px;
+    bottom: 30px;
+    font-size: 23px;
+    font-weight: bolder;
+    background: left bottom 0% / 100% 0% no-repeat linear-gradient(#9356DC, #cc2e5d);
+    background-clip: text;
+	color: transparent;
+    animation: fill 0.5s forwards;
+}
+
+@keyframes fill {
+    0% {
+        background: left bottom 0% / 100% 0% no-repeat linear-gradient(#9356DC, #cc2e5d);
+        background-clip: text;
+    }
+    100% {
+        background: left bottom 0% / 100% 100% no-repeat linear-gradient(#9356DC, #cc2e5d);
+        background-clip: text;
+    }
+}
 
 footer{
     display: flex;
