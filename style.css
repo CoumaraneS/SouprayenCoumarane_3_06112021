@@ -3,8 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    /*
-    font-family: 'Shrikhand', cursive;*/
 }
 a{
     text-decoration: none;
@@ -167,18 +165,18 @@ a{
     z-index: 2;
 }
 .choixRest::before{
-    content: url(icons/mobile01.png);
+    content: url(src/icons/mobile01.png);
     margin-left: 35px;
     margin-right: 25px;
 }
 
 .compMenu::before{
-    content: url(icons/menu01.png);
+    content: url(src/icons/menu01.png);
     margin-left: 35px;
     margin-right: 25px;
 }
 .déguste::before{
-    content: url(icons/restaurant01.png);
+    content: url(src/icons/restaurant01.png);
     margin-left: 35px;
     margin-right: 25px;
 }
@@ -304,10 +302,10 @@ footer{
     background-position: -100%;
 }
 .propose::before{
-    content: url(icons/fourch01.png);
+    content: url(src/icons/fourch01.png);
 }
 .partenaire::before{
-    content: url(icons/partner01.png);
+    content: url(src/icons/partner01.png);
 }
 
 
