@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google fonts et Awesome fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
@@ -11,33 +12,39 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8c5398b89a.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/menustyle.css">
+    <!--Titre de l'onglet de la page Web et CSS stylesheet link-->
+    <link rel="stylesheet" href="./css/menustyle.css">
     <title>La note enchantée</title>
 </head>
 <body>
+    <!--Header-->
     <header>
+    <!--Logo principal-->
         <div class="logo">
-            <a href="index.html"><h1>ohmyfood</h1></a>
+            <a href="Index.html"><h1>ohmyfood</h1></a>
         </div>  
-        <a href="index.html"><img src="src/icons/flèche01.png" alt="Flèche Icon" class="fleche"></a>
-        <img src="src/images/enchantee.jpg" alt="La note enchantée image" class="bg_img">
+    <!--Image du restaurant avec flèche retour page d'accueil--> 
+        <a href="Index.html"><img src="./src/icons/flèche01.png" alt="Flèche Icon" class="fleche"></a>
+        <img src="./src/images/enchantee.jpg" alt="La note enchantée image" class="bg_img">
     </header>
-
+    <!--Section menu avec liste des menus, description et prix-->
     <div id="container">
+    <!--Titre du restaurant-->
         <div class="main_titre">
             <h3>La note enchantée</h3>
         </div>
+        <!--Ajouter aux favoris icône coeur-->
         <div class="hearts">
             <i class="far fa-heart"></i>
         </div>
-
-        <div class="repas">
-            <div class="menu_liste">
-                <div class="ent_titre">
-                    <h3>ENTRÉES</h3>
-                </div>
-                    
-                <div class="menu_tab opacite" id="bar01">
+    <!--Liste des menus entrée / plat / dessert-->
+    <div class="repas">
+        <div class="menu_liste">
+    <!--Liste des menus entrée-->
+            <div class="ent_titre">
+                <h3>ENTRÉES</h3>
+            </div>   
+                <div class="menu_tab opacite bar01">
                     <div class="menu_prix">
                         <div class="menu_item">
                             <div class="item_nom">
@@ -54,7 +61,7 @@
                         </div>
                 </div>
 
-                <div class="menu_tab opacite" id="bar02">
+                <div class="menu_tab opacite bar02">
                     <div class="menu_prix">
                         <div class="menu_item">
                             <div class="item_nom">
@@ -71,7 +78,7 @@
                         </div>
                 </div>
 
-                <div class="menu_tab opacite" id="bar03">
+                <div class="menu_tab opacite bar03">
                     <div class="menu_prix">
                         <div class="menu_item">
                             <div class="item_nom">
@@ -87,7 +94,7 @@
                             <i class="fas fa-check-circle"></i>
                         </div>
                 </div>
-                <div class="menu_tab opacite" id="bar04">
+                <div class="menu_tab opacite bar04">
                     <div class="menu_prix">
                         <div class="menu_item">
                             <div class="item_nom">
@@ -104,13 +111,13 @@
                         </div>
                 </div>
             </div>
-
+    <!--Liste des menus plats-->
             <div class="menu_liste">
                 <div class="ent_titre">
                     <h3>PLATS</h3>
                 </div>
                     
-                <div class="menu_tab opacite" id="bar05">
+                <div class="menu_tab opacite bar05">
                     <div class="menu_prix">
                         <div class="menu_item">
                             <div class="item_nom">
@@ -127,7 +134,7 @@
                         </div>
                 </div>
 
-                <div class="menu_tab opacite" id="bar06">
+                <div class="menu_tab opacite bar06">
                     <div class="menu_prix">
                         <div class="menu_item">
                             <div class="item_nom">
@@ -144,7 +151,7 @@
                         </div>
                 </div>
 
-                <div class="menu_tab opacite" id="bar07">
+                <div class="menu_tab opacite bar07">
                     <div class="menu_prix">
                         <div class="menu_item">
                             <div class="item_nom">
@@ -161,13 +168,13 @@
                         </div>
                 </div>
             </div>
-
+    <!--Liste des menus desserts-->
             <div class="menu_liste">
                 <div class="ent_titre">
                     <h3>DESSERTS</h3>
                 </div>
                     
-                <div class="menu_tab opacite" id="bar08">
+                <div class="menu_tab opacite bar08">
                     <div class="menu_prix">
                         <div class="menu_item">
                             <div class="item_nom">
@@ -184,7 +191,7 @@
                         </div>
                 </div>
 
-                <div class="menu_tab opacite" id="bar09">
+                <div class="menu_tab opacite bar09">
                     <div class="menu_prix">
                         <div class="menu_item">
                             <div class="item_nom">
@@ -201,7 +208,7 @@
                         </div>
                 </div>
 
-                <div class="menu_tab opacite" id="bar10">
+                <div class="menu_tab opacite bar10">
                     <div class="menu_prix">
                         <div class="menu_item">
                             <div class="item_nom">
@@ -221,23 +228,28 @@
         </div>
 
     </div>
-    
-
-    
+    <!--Bouton de commande-->
     <div class="command">
         <button class="commander">Commander</button>
     </div>
-
+    <!--Footer-->
     <footer>
+    <!--Footer Logo-->
         <div class="foot_logo">
-            <a href="index.html"><h3>ohmyfood</h3></a>
+            <a href="Index.html"><h3>ohmyfood</h3></a>
         </div>
-        <ul class="foot_liste">
-            <a href="#"><li class="propose"> Proposer un restaurant</li></a>
-            <a href="#"><li class="partenaire"> Devenir partenaire</li></a>
-            <a href="#"><li>Mentions légales</li></a>
-            <a href="mailto:contact@ohmyfood.com"><li>Contact</li></a>
-        </ul>
+    <!--Menu de pied de page avec lien de contact-->
+        <div class="foot_liste">
+            <div class="foot_icon">
+                <i class="fas fa-utensils"></i><span> Proposer un restaurant</span>
+            </div>
+            <div class="foot_icon">   
+            <i class="fas fa-hands-helping"></i><span>Devenir partenaire</span>
+            </div>
+            <span>Mentions légales</span>
+            <a href="mailto:contact@ohmyfood.com"><span>Contact</span></a>
+        </div>
+
     </footer>
 </body>
 </html>

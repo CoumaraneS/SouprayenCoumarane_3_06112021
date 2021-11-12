@@ -4,11 +4,13 @@
     box-sizing: border-box;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
+/*---Style par défaut pour la balise <a>---*/
 a{
     text-decoration: none;
     color: black;
     cursor: pointer;
 }
+/*---Flexbox et style du chargeur/spinner---*/
 #loader{
     display: flex;
     justify-content: center;
@@ -29,13 +31,14 @@ a{
     background-color: transparent;
     position: absolute;
     border-radius: 50%;
-    box-shadow: 0px 0px 12px 2px rgb(0, 0, 0);
+    box-shadow: 0 0 12px 2px rgb(0, 0, 0);
     border-top: 8px solid #9356DC;
     border-right: 8px solid #FF79DA;
     border-bottom: 8px solid #ffc5ef;
     border-left: 8px solid #cca3ff;
     animation: rotate .8s linear infinite;
   }
+/*---Keyframes d'animation pour le chargeur---*/
   @keyframes loader{
     to{ left: -100%;}
 }
@@ -48,6 +51,7 @@ a{
     }
   }
 
+/*---Flex pour le logo---*/
 .logo{
     display: flex;
     justify-content: center;
@@ -57,30 +61,30 @@ a{
 .logo h1{
     font-family: 'Shrikhand', cursive;
 }
-
+/*---Flex et style pour le rechercher des restaurants---*/
 .search{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 50px;
-    padding: 20px;
+    padding: 20px 0;
     background: #ebebea;
-    box-shadow: inset -2px 2px 6px 0px rgb(190, 190, 190);
+    box-shadow: inset -2px 2px 6px 0 rgb(190, 190, 190);
 }
-.search > i{
-    margin-left: 18%;
-    font-size: 22px;
-}
+.fa-map-marker-alt{
+    font-size: 18px;
+    padding-left: 95px;
+  }
 .search > input{
     height: 40px;
     border: none;
     outline: none;
     background: transparent;
-    font-size: 22px;
-    padding-left: 15px;
+    font-size: 18px;
+    padding: 0 10px 0 15px;
 }
-
+/*---Flex pour brève description etc bouton pour sélectionner nos restaurants---*/
 .sommaire{
     display: flex;
     flex-direction: column;
@@ -95,8 +99,9 @@ a{
 .sommaire p{
     font-size: 16px;
     color: #5a5a5a;
-    margin: 0px 40px 34px 40px;
+    margin: 0 40px 34px 40px;
 }
+/*---Effets et style pour le bouton---*/
 .explorer{
     width: 220px;
     height: 50px;
@@ -106,14 +111,15 @@ a{
     border: none;
     background-image: linear-gradient(#ff79da, #9356DC);
     color: white;
-    box-shadow: 2px 2px 15px 0px rgb(190, 190, 190);
+    box-shadow: 2px 2px 15px 0 rgb(190, 190, 190);
     cursor: pointer;
     transition: all 1s;
 }
 .explorer:hover{
     background-image: linear-gradient(#9356DC, #ff79da);
-    box-shadow: 2px 2px 15px 0px rgb(24, 24, 24);
+    box-shadow: 2px 2px 15px 0 rgb(24, 24, 24);
 }
+/*---Flex pour la section Fonctionnement---*/
 .fonction{
     display: flex;
     flex-direction: column;
@@ -125,17 +131,19 @@ a{
     font-size: 20px;
     margin-bottom: 22px;
 }
+/*---Flex pour la liste de la section Fonctionnement---*/
 .fonc_menu{
     display: flex;
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
-    transform: translate(-20px,0);
+    transform: translate(-15px,0);
 }
 .choix{
     display: flex;
     align-items: center;
 }
+/*---Flex, style et effets pour les boutons de la section Fonctionnement---*/
 .fonction button{
     display: flex;
     align-items: center;
@@ -143,44 +151,49 @@ a{
     height: 75px;
     margin-top: 10px;
     margin-bottom: 10px;
-    position: relative;
+    padding-left: 80px;
     border-radius: 24px;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 500;
     border: none;
     background: #f7f7f6;
-    box-shadow: 2px 2px 10px 0px rgb(202, 202, 202);
+    box-shadow: 2px 2px 10px 0 rgb(202, 202, 202);
     cursor: pointer;
     transition: all 0.5s;
 }
 .fonction button:hover{
     background: #F5EDFF;
-    box-shadow: 2px 2px 10px 0px rgb(100, 100, 100);
+    box-shadow: 2px 2px 10px 0 rgb(100, 100, 100);
 }
-.numero{
-    width: 28px;
-    height: 28px;
-    position: relative;
-    left: 12px;
-    z-index: 2;
-}
-.choixRest::before{
-    content: url(src/icons/mobile01.png);
-    margin-left: 35px;
-    margin-right: 25px;
-}
-
-.compMenu::before{
-    content: url(src/icons/menu01.png);
-    margin-left: 35px;
-    margin-right: 25px;
-}
-.déguste::before{
-    content: url(src/icons/restaurant01.png);
-    margin-left: 35px;
-    margin-right: 25px;
+/*---Flex pour les icônes numériques et le style---*/
+.numero {
+  position: relative;
+  left: 12px;
+  width: 22px;
+  text-align: center;
+  color: #FFF;
+  font-weight: normal;
+  padding: 3px;
+  background-color: #9356DC;
+  font-size: 14px;
+  border-radius: 11px;
+  z-index: 2;
+  cursor: pointer;
 }
 
+.fonc_menu i{
+  font-size: 20px;
+  position: absolute;
+  color: #7E7E7E;
+  margin-left: 60px;
+  margin-right: 20px;
+  z-index: 2;
+  cursor: pointer;
+}
+.choix:hover i{
+  color: #9356DC;
+}
+/*---Flex pour le logo---*/
 
 .sec_rest{
     display: flex;
@@ -193,6 +206,7 @@ a{
     font-size: 24px;
     margin-bottom: 20px;
 }
+/*---Flex pour la section restaurant et le style---*/
 .restaurant{
     display: flex;
     flex-wrap: wrap;
@@ -207,14 +221,15 @@ a{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 18px;
-    box-shadow: 2px 2px 10px 0px rgb(202, 202, 202);
+    box-shadow: 2px 2px 10px 0 rgb(202, 202, 202);
     transition: all 0.4s; 
     position: relative;
 }
 .resto:hover{
     transform: scale(1.03);
-    box-shadow: 2px 2px 10px 0px #9356DC;
+    box-shadow: 2px 2px 10px 0 #9356DC;
 }
+/*---Flex for the restaurant images et le style---*/
 .resto img{
     width: 100%;
     height: 174px;
@@ -228,7 +243,7 @@ a{
 }
 .resto p{
     font-weight: normal;
-    margin: 0px 0 20px 20px;
+    margin: 0 0 20px 20px;
 }
 .resto h3{
     font-size: 14px;
@@ -240,7 +255,7 @@ a{
     padding: 6px 12px;
     border-radius: 2px;
 }
-
+/*---Flex pour l'icône et les effets de coeur de signet préférés---*/
 .fa-heart::before {
     position: relative;
     z-index: 10;
@@ -260,57 +275,73 @@ a{
     font-weight: bolder;
     background: left bottom 0% / 100% 0% no-repeat linear-gradient(#9356DC, #cc2e5d);
     background-clip: text;
+    -webkit-background-clip: text;
 	color: transparent;
     animation: fill 0.5s forwards;
 }
-
+/*---Animation pour l'icône du cœur---*/
 @keyframes fill {
     0% {
         background: left bottom 0% / 100% 0% no-repeat linear-gradient(#9356DC, #cc2e5d);
         background-clip: text;
+        -webkit-background-clip: text;
     }
     100% {
         background: left bottom 0% / 100% 100% no-repeat linear-gradient(#9356DC, #cc2e5d);
         background-clip: text;
+        -webkit-background-clip: text;
     }
 }
-
+/*---Flex pour le footer et le style---*/
 footer{
     display: flex;
     flex-direction: column;
     background: #343534;
     padding: 30px 20px 40px 20px;
-}
-.foot_logo h3{
+  }
+  .foot_logo h3{
     font-family: 'Shrikhand', cursive;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: normal;
     color: white;
     margin-bottom: 10px;
-}
-.foot_liste{
+  }
+  /*---Flex pour le footer liste et le style---*/
+  .foot_liste{
     display: flex;
     flex-direction: column;
-}
-.foot_liste li{
+    cursor: pointer;
+  }
+  .foot_liste i{
+    color: white;
+  }
+  .foot_liste a{
+    text-decoration: none;
+  }
+  /*---Animation pour le footer liste---*/
+  .foot_liste span{
+    font-size: 16px;
     text-decoration: none;
     list-style: none;
     line-height: 30px;
     background: linear-gradient(to right, rgb(255, 255, 255) 50%, #9356DC 50%, #cc2e5d);
     background-size: 200%;
     background-clip: text;
+    -webkit-background-clip: text;
     color: transparent;
     transition: 0.4s ease-out;
-}
-.foot_liste li:hover{
+  }
+  .foot_liste span:hover{
     background-position: -100%;
-}
-.propose::before{
-    content: url(src/icons/fourch01.png);
-}
-.partenaire::before{
-    content: url(src/icons/partner01.png);
-}
+  }
+  .foot_icon i{
+    font-size: 13px;
+    margin-right: 10px;
+  }
+  .foot_icon span{
+    font-weight: 500;
+  }
+
 
 
 /*------media queries--------*/
@@ -321,7 +352,7 @@ footer{
         height: 250px;
     }
     .sommaire p{
-        margin: 0px 40px 20px 40px;
+        margin: 0 40px 20px 40px;
     }
     .sec_rest{
         height: 100%;
@@ -339,7 +370,7 @@ footer{
     .foot_liste{
         flex-direction: row;
         justify-content: center;
-        gap: 50px;
+        gap: 5%;
     }
 
 }
@@ -351,7 +382,7 @@ footer{
         height: 250px;
     }
     .sommaire p{
-        margin: 0px 40px 20px 40px;
+        margin: 0 40px 20px 40px;
     }
     .fonction{
         height: 100%;
@@ -379,7 +410,7 @@ footer{
     .foot_liste{
         flex-direction: row;
         justify-content: center;
-        gap: 50px;
+        gap: 5%;
     }
 }
 
