@@ -1,3 +1,6 @@
+---
+permalink: /index.html
+---
 # SouprayenCoumarane_3_06112021
 Projet 3 - Site Web d'Ohmyfood
 Ohmyfood! est une jeune startup qui voudrait s'imposer sur le marché de la restauration. L'objectif est de
