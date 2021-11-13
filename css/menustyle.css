@@ -14,7 +14,7 @@ a{
 .logo{
   display: flex;
   justify-content: center;
-  padding: 18px 0 18px 0;
+  padding: 14px 0 21px 0;
 }
 .logo h1{
   font-family: 'Shrikhand', cursive;
@@ -26,7 +26,7 @@ a{
 .fleche{
   display: flex;
   justify-content: flex-start;
-  margin: -52px 0 15px 20px;
+  margin: -53px 0 15px 20px;
   transition: transform .3s;
 }
 .fleche:hover{
