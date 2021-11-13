@@ -60,6 +60,8 @@ a{
 }
 .logo h1{
     font-family: 'Shrikhand', cursive;
+    font-size: 30px;
+    font-weight: 400;
 }
 /*---Flex et style pour le rechercher des restaurants---*/
 .search{
@@ -73,7 +75,7 @@ a{
     box-shadow: inset -2px 2px 6px 0 rgb(190, 190, 190);
 }
 .fa-map-marker-alt{
-    font-size: 18px;
+    font-size: 16px;
     padding-left: 95px;
   }
 .search > input{
@@ -81,7 +83,8 @@ a{
     border: none;
     outline: none;
     background: transparent;
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: bolder;
     padding: 0 10px 0 15px;
 }
 /*---Flex pour brève description etc bouton pour sélectionner nos restaurants---*/
@@ -94,18 +97,20 @@ a{
 }
 .sommaire h3{
     font-size: 24px;
-    margin: 45px 60px 20px 60px;
+    margin: 38px 60px 10px 60px;
 }
 .sommaire p{
-    font-size: 16px;
+    font-size: 19px;
+    font-weight: 300;
     color: #5a5a5a;
-    margin: 0 40px 34px 40px;
+    margin: 0 20px 28px 20px;
 }
 /*---Effets et style pour le bouton---*/
 .explorer{
     width: 220px;
     height: 50px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 25px;
     font-size: 16px;
     border: none;
@@ -124,12 +129,12 @@ a{
     display: flex;
     flex-direction: column;
     height: 440px;
-    padding: 50px 20px 65px 20px;
+    padding: 46px 20px 65px 20px;
 }
 
 .fonction h3{
-    font-size: 20px;
-    margin-bottom: 22px;
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 /*---Flex pour la liste de la section Fonctionnement---*/
 .fonc_menu{
@@ -148,9 +153,9 @@ a{
     display: flex;
     align-items: center;
     width: 325px;
-    height: 75px;
+    height: 72px;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
     padding-left: 80px;
     border-radius: 24px;
     font-size: 16px;
@@ -199,12 +204,13 @@ a{
     display: flex;
     flex-direction: column;
     height: 1227px;
-    padding: 60px 20px;
+    padding: 53px 20px;
+    margin-bottom: 3px;
     background: #f7f7f6;
 }
 .sec_rest h3{
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
 }
 /*---Flex pour la section restaurant et le style---*/
 .restaurant{
@@ -215,7 +221,7 @@ a{
     display: flex;
     flex-direction: column;
     width: 335px;
-    height: 250px;
+    height: 252px;
     border-radius: 20px;
     background: white;
     margin-left: auto;
@@ -239,10 +245,10 @@ a{
 }
 .resto h2{
     font-size: 18px;
-    margin: 14px 0 4px 20px;
+    margin: 12px 0 4px 20px;
 }
 .resto p{
-    font-weight: normal;
+    font-weight: 300;
     margin: 0 0 20px 20px;
 }
 .resto h3{
@@ -260,7 +266,7 @@ a{
     position: relative;
     z-index: 10;
     font-size: 24px;
-    left: 299px;
+    left: 286px;
     bottom: 60px;
     cursor: pointer;
 }
@@ -269,8 +275,8 @@ a{
     content: "\f004";
     position: absolute;
     z-index: 1;
-    left: 299px;
-    bottom: 30px;
+    left: 286px;
+    bottom: 34px;
     font-size: 23px;
     font-weight: bolder;
     background: left bottom 0% / 100% 0% no-repeat linear-gradient(#9356DC, #cc2e5d);
@@ -297,14 +303,14 @@ footer{
     display: flex;
     flex-direction: column;
     background: #343534;
-    padding: 30px 20px 40px 20px;
+    padding: 22px 20px 32px 20px;
   }
   .foot_logo h3{
     font-family: 'Shrikhand', cursive;
     font-size: 18px;
     font-weight: normal;
     color: white;
-    margin-bottom: 10px;
+    margin-bottom: 14px;
   }
   /*---Flex pour le footer liste et le style---*/
   .foot_liste{
@@ -323,7 +329,7 @@ footer{
     font-size: 16px;
     text-decoration: none;
     list-style: none;
-    line-height: 30px;
+    line-height: 26px;
     background: linear-gradient(to right, rgb(255, 255, 255) 50%, #9356DC 50%, #cc2e5d);
     background-size: 200%;
     background-clip: text;
