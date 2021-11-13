@@ -39,18 +39,17 @@ a{
     animation: rotate .8s linear infinite;
   }
 /*---Keyframes d'animation pour le chargeur---*/
-  @keyframes loader{
+@keyframes loader{
     to{ left: -100%;}
 }
-  @keyframes rotate {
+@keyframes rotate {
     from {
       transform: rotate(0);
     }
     to {
       transform: rotate(360deg);
     }
-  }
-
+}
 /*---Flex pour le logo---*/
 .logo{
     display: flex;
@@ -77,7 +76,7 @@ a{
 .fa-map-marker-alt{
     font-size: 16px;
     padding-left: 95px;
-  }
+}
 .search > input{
     height: 40px;
     border: none;
@@ -172,34 +171,32 @@ a{
 }
 /*---Flex pour les icônes numériques et le style---*/
 .numero {
-  position: relative;
-  left: 12px;
-  width: 22px;
-  text-align: center;
-  color: #FFF;
-  font-weight: normal;
-  padding: 3px;
-  background-color: #9356DC;
-  font-size: 14px;
-  border-radius: 11px;
-  z-index: 2;
-  cursor: pointer;
+    position: relative;
+    left: 12px;
+    width: 22px;
+    text-align: center;
+    color: #FFF;
+    font-weight: normal;
+    padding: 3px;
+    background-color: #9356DC;
+    font-size: 14px;
+    border-radius: 11px;
+    z-index: 2;
+    cursor: pointer;
 }
-
 .fonc_menu i{
-  font-size: 20px;
-  position: absolute;
-  color: #7E7E7E;
-  margin-left: 60px;
-  margin-right: 20px;
-  z-index: 2;
-  cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    color: #7E7E7E;
+    margin-left: 60px;
+    margin-right: 20px;
+    z-index: 2;
+    cursor: pointer;
 }
 .choix:hover i{
-  color: #9356DC;
+    color: #9356DC;
 }
 /*---Flex pour le logo---*/
-
 .sec_rest{
     display: flex;
     flex-direction: column;
@@ -270,7 +267,6 @@ a{
     bottom: 60px;
     cursor: pointer;
 }
-
 .fa-heart:hover::after {
     content: "\f004";
     position: absolute;
@@ -305,27 +301,27 @@ footer{
     background: #343534;
     padding: 22px 20px 32px 20px;
   }
-  .foot_logo h3{
+.foot_logo h3{
     font-family: 'Shrikhand', cursive;
     font-size: 18px;
     font-weight: normal;
     color: white;
     margin-bottom: 14px;
-  }
-  /*---Flex pour le footer liste et le style---*/
-  .foot_liste{
+}
+/*---Flex pour le footer liste et le style---*/
+.foot_liste{
     display: flex;
     flex-direction: column;
     cursor: pointer;
-  }
-  .foot_liste i{
+}
+.foot_liste i{
     color: white;
-  }
-  .foot_liste a{
+}
+.foot_liste a{
     text-decoration: none;
-  }
-  /*---Animation pour le footer liste---*/
-  .foot_liste span{
+}
+/*---Animation pour le footer liste---*/
+.foot_liste span{
     font-size: 16px;
     text-decoration: none;
     list-style: none;
@@ -336,24 +332,19 @@ footer{
     -webkit-background-clip: text;
     color: transparent;
     transition: 0.4s ease-out;
-  }
-  .foot_liste span:hover{
+}
+.foot_liste span:hover{
     background-position: -100%;
-  }
-  .foot_icon i{
+}
+.foot_icon i{
     font-size: 13px;
     margin-right: 10px;
-  }
-  .foot_icon span{
+}
+.foot_icon span{
     font-weight: 500;
-  }
-
-
-
+}
 /*------media queries--------*/
-
 @media (min-width: 700px) and (max-width: 991px){
-
     .sommaire{
         height: 250px;
     }
@@ -378,12 +369,8 @@ footer{
         justify-content: center;
         gap: 5%;
     }
-
 }
-
-
 @media (min-width: 992px) {
-
     .sommaire{
         height: 250px;
     }

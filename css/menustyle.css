@@ -55,43 +55,43 @@ a{
 }
 /*---Le style pour l'icône et les effets de coeur de signet préférés---*/
 .fa-heart::before {
-position: absolute;
-z-index: 10;
-font-size: 24px;
-right: 30px;
-top: 40px;
-cursor: pointer;
+  position: absolute;
+  z-index: 10;
+  font-size: 24px;
+  right: 30px;
+  top: 40px;
+  cursor: pointer;
 }
 
 .fa-heart:hover::after {
-content: "\f004";
-position: absolute;
-z-index: 1;
-right: 32px;
-top: 41px;
-font-size: 23px;
-font-weight: bolder;
-background: left bottom 0% / 100% 0% no-repeat linear-gradient(#cc2e5d, #9356DC);
-color: transparent;
-animation: fill 0.5s forwards;
+  content: "\f004";
+  position: absolute;
+  z-index: 1;
+  right: 32px;
+  top: 41px;
+  font-size: 23px;
+  font-weight: bolder;
+  background: left bottom 0% / 100% 0% no-repeat linear-gradient(#cc2e5d, #9356DC);
+  color: transparent;
+  animation: fill 0.5s forwards;
 }
 /*---Animation pour l'icône du cœur---*/
 @keyframes fill {
-0% {
-    background: left bottom 0% / 100% 0% no-repeat linear-gradient(#cc2e5d, #9356DC);
-    background-clip: text;
-    -webkit-background-clip: text;
-}
-100% {
-    background: left bottom 0% / 100% 100% no-repeat linear-gradient(#cc2e5d, #9356DC);
-    background-clip: text;
-    -webkit-background-clip: text;
-}
+  0% {
+      background: left bottom 0% / 100% 0% no-repeat linear-gradient(#cc2e5d, #9356DC);
+      background-clip: text;
+      -webkit-background-clip: text;
+  }
+  100% {
+      background: left bottom 0% / 100% 100% no-repeat linear-gradient(#cc2e5d, #9356DC);
+      background-clip: text;
+      -webkit-background-clip: text;
+  }
 }
 /*---Flex pour le menu repas---*/
 .repas{
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 /*---Flex pour la liste des menus---*/
 .menu_liste{
@@ -139,12 +139,10 @@ flex-direction: column;
   animation: slide-left 0.5s ease;
   transform-origin: right;
 }
-
 .menu_tab:hover .item_prix {
   padding-right: 70px;
   transition: 0.5s ease;
 }
-
 .menu_tab .cocher {
   display: none;
   position: absolute;
@@ -154,26 +152,22 @@ flex-direction: column;
   padding: 0 13px;
   height: 100%;
 }
-
 .menu_tab .cocher i {
   font-size: 30px;
   color: white;
   transform: rotate(1turn);
   animation: rotate 0.5s both;
 }
-
 .menu_item {
   margin-left: 10px;
   white-space: nowrap;
   overflow: hidden;
 }
-
 .menu_item p {
   margin: 0;
   text-overflow: ellipsis;
   overflow: hidden;
 }
-
 .item_nom {
   font-size: 18px;
   font-weight: 500;
@@ -197,19 +191,19 @@ flex-direction: column;
 /*---Keyframe animation pour la coche de sélection de menu---*/
 @keyframes rotate {
   0% {
-            transform: rotate(0);
+      transform: rotate(0);
   }
   100% {
-            transform: rotate(360deg);
+      transform: rotate(360deg);
   }
 }
 
 @keyframes slide-left {
   0% {
-            transform: translateX(50px);
+      transform: translateX(50px);
   }
   100% {
-            transform: translateX(0);
+      transform: translateX(0);
   }
 }
 
@@ -258,7 +252,6 @@ flex-direction: column;
 .bar10 {
           animation-delay: 0.55s;
 }
-
 /*---Flex pour button command et les effets ---*/
 .command{
   display: flex;
@@ -287,103 +280,86 @@ flex-direction: column;
 }
 /*---Flex pour le footer et le style---*/
 footer{
-display: flex;
-flex-direction: column;
-background: #343534;
-padding: 22px 20px 32px 20px;
+  display: flex;
+  flex-direction: column;
+  background: #343534;
+  padding: 22px 20px 32px 20px;
 }
 .foot_logo h3{
-font-family: 'Shrikhand', cursive;
-font-size: 18px;
-font-weight: normal;
-color: white;
-margin-bottom: 14px;
+  font-family: 'Shrikhand', cursive;
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+  margin-bottom: 14px;
 }
  /*---Flex pour le footer liste et le style---*/
 .foot_liste{
-display: flex;
-flex-direction: column;
-cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
 }
 .foot_liste i{
-color: white;
+  color: white;
 }
 .foot_liste a{
-text-decoration: none;
+  text-decoration: none;
 }
  /*---Animation pour le footer liste---*/
 .foot_liste span{
-font-size: 16px;
-text-decoration: none;
-list-style: none;
-line-height: 26px;
-background: linear-gradient(to right, rgb(255, 255, 255) 50%, #9356DC 50%, #cc2e5d);
-background-size: 200%;
-background-clip: text;
--webkit-background-clip: text;
-color: transparent;
-transition: 0.4s ease-out;
+  font-size: 16px;
+  text-decoration: none;
+  list-style: none;
+  line-height: 26px;
+  background: linear-gradient(to right, rgb(255, 255, 255) 50%, #9356DC 50%, #cc2e5d);
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 0.4s ease-out;
 }
 .foot_liste span:hover{
-background-position: -100%;
+  background-position: -100%;
 }
 .foot_icon i{
-font-size: 13px;
-margin-right: 10px;
+  font-size: 13px;
+  margin-right: 10px;
 }
 .foot_icon span{
-font-weight: 500;
+  font-weight: 500;
 }
-
 /*------media queries--------*/
-
 @media (min-width: 600px) and (max-width: 991px){
-
-.bg_img{
+  .bg_img{
     height: 50vh;
-}
-
-#container{
+  }
+  #container{
     margin-top: -10vh;
+  }
 }
-
-}
-
 @media (min-width: 700px){
-
-.footer{
-  align-items: center;
+  .footer{
+    align-items: center;
+  }
+  .foot_liste{
+      flex-direction: row;
+      justify-content: center;
+      gap: 5%;
+  }
 }
-.foot_liste{
-    flex-direction: row;
-    justify-content: center;
-    gap: 5%;
-}
-
-}
-
-
-
-
 @media (min-width: 992px){
-
-.bg_img{
-    height: 50vh;
-}
-
-#container{
-    margin-top: -10vh;
-}
-
-.repas{
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-}
-.menu_tab{
-  width: 400px;
-}
-
-
+  .bg_img{
+      height: 50vh;
+  }
+  #container{
+      margin-top: -10vh;
+  }
+  .repas{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  .menu_tab{
+    width: 400px;
+  }
 }
